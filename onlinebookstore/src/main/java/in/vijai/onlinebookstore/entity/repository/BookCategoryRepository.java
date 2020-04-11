@@ -6,6 +6,15 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 
 import in.vijai.onlinebookstore.entity.BookCategory;
 
+
+/**
+ * 
+ * @author vijai
+ * 
+ * @@RepositoryRestResource=> For overriding the url name(Rest end point name).
+ *
+ */
+
 @CrossOrigin("*")
 @RepositoryRestResource(collectionResourceRel = "bookCategory",path = "book-category")
 public interface BookCategoryRepository extends JpaRepository<BookCategory, Long> {

@@ -16,7 +16,16 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
-
+/**
+ * 
+ * 
+ * @author vijai
+ * 
+ * Entity Class => Maps the data from the table.
+ * 
+ * getter,setter,toString annotations are from lambock library, used to skip getters,setters.
+ *
+ */
 @Entity
 @Table(name="tbl_book")
 @Getter
