@@ -1,5 +1,6 @@
 export class Book {
-
+    
+    id:number;
     sku:String;
     name:String;
     description:String;

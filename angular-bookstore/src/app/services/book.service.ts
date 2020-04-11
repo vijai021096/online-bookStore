@@ -32,7 +32,11 @@ export class BookService {
   searchBooks(keyword:string):Observable<Book[]>{
     const searchUrl=`${this.baseUrl}/search/searchByKeyword?name=${keyword}`;
     return this.newMethod(searchUrl);
+  }
+    getBookDetails(bookid:number):Observable<Book>{
 
+    const bookDetailsUrl=`${this.baseUrl}/${bookid}`;
+    return this.httpClient.get<Book>(bookDetailsUrl);
   
   }
 }
