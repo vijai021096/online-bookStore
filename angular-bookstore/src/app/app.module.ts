@@ -23,7 +23,8 @@ const routes : Routes=[
     AppComponent,
     BookListComponent,
     PageNotFoundComponent,
-    BookCategoryComponent
+    BookCategoryComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
