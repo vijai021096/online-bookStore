@@ -25,5 +25,7 @@ public interface BookRepository extends JpaRepository<Book, Long>{
     @RestResource(path="categoryid")                                  //To override the rest end point of query method.In default it will the name of the method.
 	Page<Book> findByCategoryId(@Param("id")Long id,Pageable page);   //Creating Query method based on category id
 		 
+    @RestResource(path="searchByKeyword")                                  //To override the rest end point of query method.In default it will the name of the method.
+   	Page<Book> findByNameContaining(@Param("name")String keyword,Pageable page);
 	 
 }
